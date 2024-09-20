@@ -23,7 +23,7 @@ routers.get('/ListarTodo', [
 // --------------------------------------------------------------------------------------------------------------
 routers.post("/crear", [  
 
-    validarJWT,
+    // validarJWT,
      check('Nombre', 'El campo nombre es obligatorio').notEmpty(),
     check('Codigo', ' El campo del codigo es obligatorio').notEmpty(),
     check('Codigo', 'El Codigo debe tener maximo 20 caracteres').isLength({max:20}),

@@ -44,7 +44,7 @@ class Server {
     listen() {
         this.Server.listen(this.port, () => {
             console.log(`Servidor escuchando en el puerto ${this.port}`); // Corrige el uso de template literals
-            mongoose.connect('mongodb://localhost:27017')
+            mongoose.connect('mongodb+srv://mariromer573:angelica0227@cluster0.g6ilg.mongodb.net/ProyectoAsistencias')
                 .then(() => console.log('Conectado a la base de datos!'))
                 .catch(err => console.error('Error al conectar a la base de datos:', err));
         });
